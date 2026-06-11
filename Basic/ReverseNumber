@@ -1,0 +1,10 @@
+number = int(input("Enter your number"))
+a = number
+
+reversed_num = 0
+
+while number > 0:
+    reversed_num = reversed_num * 10 + number % 10
+    number = number // 10 
+
+print(f"Given Number is {a} and Reversed Number is {reversed_num}")

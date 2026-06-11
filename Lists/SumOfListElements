@@ -1,0 +1,12 @@
+numbers = [10, 25, 5, 40, 15]
+
+if not numbers:
+    print("List is Empty")
+else:
+    list_total = 0
+    for num in numbers:
+        list_total += num           
+    print(f"Sum of list is: {list_total}")
+    
+    print(f"Sum of list is: {sum(numbers)}")
+    

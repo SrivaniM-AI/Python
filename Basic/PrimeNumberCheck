@@ -1,0 +1,18 @@
+import math
+
+number = int(input("Enter your number"))
+
+if number == 0 or number == 1:
+    print(f"Given number {number} is not prime number")
+elif number == 2:
+    print(f"Given number {number} is prime number")
+elif number % 2 == 0:
+    print(f"Given number {number} is not prime number")
+else:
+    num = int(math.sqrt(number)) + 1
+    for i in range(3, num, 2):
+        if number % i == 0:
+            print(f"Given number {number} is not prime number")
+            break
+    else:
+        print(f"Given number {number} is prime number")

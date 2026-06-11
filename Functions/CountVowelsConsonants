@@ -1,0 +1,16 @@
+def count_vowels(text):
+    counter = 0
+    for ch in text:
+        if ch.lower() in 'aeiou':
+            counter += 1
+    return counter
+
+def count_consonants(text):
+    counter = 0
+    for ch in text:
+        if ch.isalpha() and ch.lower() not in 'aeiou':
+            counter += 1
+    return counter
+
+print(count_vowels('Hello World 123!'))
+print(count_consonants('Hello World 123!'))
